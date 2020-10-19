@@ -1,1 +1,3 @@
 # codeid
+
+npm run dev
