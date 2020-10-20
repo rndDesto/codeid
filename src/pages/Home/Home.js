@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     bottom: theme.spacing(2),
     right: theme.spacing(2),
   },
+  contactContainer:{
+    marginTop:theme.spacing(5),
+  }
 }));
 
 const Home = () => {
@@ -99,7 +102,7 @@ const Home = () => {
     <div>
       {contactState.isError ? <DataAlert inputProps={{ severity:'error' }} message={contactState.isError}/> : null}
 
-      <Container maxWidth="sm">
+      <Container className={classes.contactContainer} maxWidth="sm">
         <Grid alignItems="center"
           container
           direction="row"

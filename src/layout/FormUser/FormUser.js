@@ -100,7 +100,7 @@ const FormUser = ({ openModal, handleCloseModal,userData, modalType }) => {
             <div>
               <TextField
                 defaultValue={userData.firstName}
-                error = {formik.touched.firstName && formik.errors.firstName ? true : false}
+                error = {formik.errors.firstName ? true : false}
                 helperText={formik.errors.firstName}
                 label="Firstname"
                 name="firstName"
@@ -112,7 +112,7 @@ const FormUser = ({ openModal, handleCloseModal,userData, modalType }) => {
             <div>
               <TextField
                 defaultValue={userData.lastName}
-                error = {formik.touched.lastName && formik.errors.lastName ? true : false}
+                error = {formik.errors.lastName ? true : false}
                 helperText={formik.errors.lastName}
                 label="Lastname"
                 name="lastName"
@@ -124,7 +124,7 @@ const FormUser = ({ openModal, handleCloseModal,userData, modalType }) => {
             <div>
               <TextField
                 defaultValue={userData.age}
-                error = {formik.touched.age && formik.errors.age ? true : false}
+                error = {formik.errors.age ? true : false}
                 helperText={formik.errors.age}
                 label="Umur"
                 name="age"
@@ -137,7 +137,7 @@ const FormUser = ({ openModal, handleCloseModal,userData, modalType }) => {
             <div>
               <TextField
                 defaultValue={userData.photo}
-                error = {formik.touched.photo && formik.errors.photo ? true : false}
+                error = {formik.errors.photo ? true : false}
                 helperText={formik.errors.photo}
                 label="Photo"
                 name="photo"
