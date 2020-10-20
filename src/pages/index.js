@@ -13,6 +13,10 @@ const pageIndex = [
     componentName: Suspensed(lazy(() => import('./Home'))),
     rootName: '/'
   },
+  {
+    componentName: Suspensed(lazy(() => import('./Home'))),
+    rootName: '/codeid/'
+  },
 ];
 
 export default pageIndex;
